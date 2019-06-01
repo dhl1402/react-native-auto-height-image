@@ -50,7 +50,7 @@ export default class AutoHeightImage extends PureComponent {
 
   setInitialImageHeight() {
     const { source, width, onHeightChange } = this.props;
-    const { height = this.gotHeight.defaultHeight } = getImageSizeFitWidthFromCache(
+    const { height = this.defaultHeight } = getImageSizeFitWidthFromCache(
       source,
       width
     );
