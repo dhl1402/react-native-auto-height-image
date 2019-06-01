@@ -27,6 +27,7 @@ export default class AutoHeightImage extends PureComponent {
 
   constructor(props) {
     super(props);
+    this.defaultHeight = props.height || DEFAULT_HEIGHT;
     this.setInitialImageHeight();
   }
 
@@ -49,7 +50,7 @@ export default class AutoHeightImage extends PureComponent {
 
   setInitialImageHeight() {
     const { source, width, onHeightChange } = this.props;
-    const { height = DEFAULT_HEIGHT } = getImageSizeFitWidthFromCache(
+    const { height = this.gotHeight.defaultHeight } = getImageSizeFitWidthFromCache(
       source,
       width
     );
@@ -60,7 +61,7 @@ export default class AutoHeightImage extends PureComponent {
 
   async updateImageHeight(props) {
     if (
-      this.state.height === DEFAULT_HEIGHT ||
+      !this.gotHeight ||
       this.props.width !== props.width ||
       this.props.source !== props.source
     ) {
@@ -69,6 +70,7 @@ export default class AutoHeightImage extends PureComponent {
       try {
         const updateSequence = ++this.updateSequence;
         const { height } = await getImageSizeFitWidth(source, width);
+        this.gotHeight = true;
         if (updateSequence !== this.updateSequence) {
           return;
         }
