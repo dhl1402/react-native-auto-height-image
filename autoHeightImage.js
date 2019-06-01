@@ -91,13 +91,8 @@ export default class AutoHeightImage extends PureComponent {
 
   render() {
     // remove `width` prop from `restProps`
-    const { source, style, width, ...restProps } = this.props;
-    return (
-      <Image
-        source={source}
-        style={[this.styles.image, style]}
-        {...restProps}
-      />
-    );
+    const { style, width, as, ...restProps } = this.props;
+    const ImageComponent = as || Image;
+    return <ImageComponent style={[this.styles.image, style]} {...restProps} />;
   }
 }
