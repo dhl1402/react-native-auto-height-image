@@ -27,7 +27,7 @@ export default class AutoHeightImage extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.defaultHeight = props.height || DEFAULT_HEIGHT;
+    this.defaultHeight = props.defaultHeight || DEFAULT_HEIGHT;
     this.setInitialImageHeight();
   }
 
