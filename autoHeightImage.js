@@ -38,8 +38,8 @@ export default class AutoHeightImage extends PureComponent {
     await this.updateImageHeight(this.props);
   }
 
-  async componentWillReceiveProps(nextProps) {
-    await this.updateImageHeight(nextProps);
+  async componentDidUpdate() {
+    await this.updateImageHeight(this.props);
   }
 
   componentWillUnmount() {

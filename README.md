@@ -6,6 +6,7 @@ Initialized by [vivaxy/gt-npm-package](https://github.com/vivaxy/gt-npm-package)
 [![NPM Downloads](https://img.shields.io/npm/dt/react-native-auto-height-image.svg?style=flat-square)](https://www.npmjs.com/package/react-native-auto-height-image)
 [![MIT License](https://img.shields.io/npm/l/react-native-auto-height-image.svg?style=flat-square)](./LICENSE)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+[![Financial Contributors on Open Collective](https://opencollective.com/react-native-auto-height-image/all/badge.svg?label=financial+contributors)](https://opencollective.com/react-native-auto-height-image)
 
 This component provides you a simple way to load a remote image and automatically set `Image` height to the image dimension which fits the provided width.
 
@@ -94,4 +95,25 @@ Other image props except `resizeMode` are accepted.
 
 ## Contributors
 
-[Contributors](https://github.com/vivaxy/react-native-auto-height-image/graphs/contributors)
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/vivaxy/react-native-auto-height-image/graphs/contributors"><img src="https://opencollective.com/react-native-auto-height-image/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/react-native-auto-height-image/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/react-native-auto-height-image"><img src="https://opencollective.com/react-native-auto-height-image/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/react-native-auto-height-image/contribute)]
+
+<a href="https://opencollective.com/react-native-auto-height-image"><img src="https://opencollective.com/react-native-auto-height-image/organization.svg?width=890"></a>
+
+## Related Projects
+
+- [react-native-scalable-image](https://github.com/ihor/react-native-scalable-image)
