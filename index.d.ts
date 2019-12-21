@@ -6,6 +6,8 @@ interface TSource {
 }
 
 export interface AutoHeightImageProps extends ImageProps {
+  as?: React.FC<{}> | React.ComponentClass<{}>;
+  defaultHeight?: number;
   source: number | TSource;
   width: number;
   fallbackSource?: number | TSource;
